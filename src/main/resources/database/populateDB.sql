@@ -1,0 +1,3 @@
+-- INSERT INTO items (id, volume, value, art) VALUES
+-- (1, '11', '111', true),
+-- (2, '22', '222', false);
