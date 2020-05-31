@@ -9,22 +9,21 @@ import ru.yastrebov.warehouse333.warehouse.entity.Item;
 import ru.yastrebov.warehouse333.warehouse.entity.Location;
 import ru.yastrebov.warehouse333.warehouse.service.CalculateService;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @RunWith(JUnit4.class)
 public class WarehouseApplicationTests {
 
-//    @Value("${property.admin_tax}")
-//    private Integer ADMIN_TAX;
-//
-//    @Value("${property.insurance_tax}")
-//    private Double INSURANCE_TAX;
 
     private Item item;
     private Location location;
-    private long number_of_days;
-    private int ADMIN_TAX = 100;
-    private double expected = 16188.8;
+    private long noOfDaysBetween;
+    private int admin_tax = 100;
+    private int volume_level = 1000;
+    private double insurance_tax = 0.1;
+    private double expected = 14177.7;
 
     private CalculateService calculateService;
 
@@ -32,9 +31,7 @@ public class WarehouseApplicationTests {
     public void init() {
         System.out.println("init...");
         this.calculateService = new CalculateService();
-        this.number_of_days = 8;
-//        this.ADMIN_TAX = 100;
-//        this.INSURANCE_TAX = 0.1;
+        this.noOfDaysBetween = 7;
         this.item = new Item(1, 11, 111,true);
         this.location = new Location(1, 100, 2000);
     }
@@ -42,8 +39,10 @@ public class WarehouseApplicationTests {
     @Test
     public void calculateTest() {
         System.out.println("test...");
-        double actual = calculateService.calculate(item,location,number_of_days);
+        double actual = calculateService.calculate(item,location,noOfDaysBetween, admin_tax, volume_level, insurance_tax);
 
         assertEquals(expected, actual);
     }
+
+
 }
