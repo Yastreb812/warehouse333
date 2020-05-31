@@ -1,5 +1,4 @@
 package ru.yastrebov.warehouse333.warehouse.controller;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;

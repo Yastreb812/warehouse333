@@ -1,16 +1,11 @@
 package ru.yastrebov.warehouse333.warehouse;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.springframework.beans.factory.annotation.Value;
 import ru.yastrebov.warehouse333.warehouse.entity.Item;
 import ru.yastrebov.warehouse333.warehouse.entity.Location;
 import ru.yastrebov.warehouse333.warehouse.service.CalculateService;
-
-import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @RunWith(JUnit4.class)

@@ -16,9 +16,9 @@ CREATE TABLE locations
 
 INSERT INTO items (id, volume, value, art) VALUES
 (1, '11', '111', true),
-(2, '1500', '111', true),
-(3, '1001', '111', false),
-(4, '11', '111', true),
+(2, '1500', '250', true),
+(3, '1001', '400', false),
+(4, '77', '5000', true),
 (5, '22', '222', false);
 
 

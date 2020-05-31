@@ -1,7 +1,5 @@
 package ru.yastrebov.warehouse333.warehouse.repository;
-
 import ru.yastrebov.warehouse333.warehouse.entity.Item;
-
 import java.util.List;
 
 public interface ItemService {

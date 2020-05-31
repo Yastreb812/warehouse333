@@ -1,7 +1,5 @@
 package ru.yastrebov.warehouse333.warehouse.entity;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 
 @Entity

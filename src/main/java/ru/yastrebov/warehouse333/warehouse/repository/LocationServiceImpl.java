@@ -1,5 +1,4 @@
 package ru.yastrebov.warehouse333.warehouse.repository;
-
 import org.springframework.stereotype.Service;
 import ru.yastrebov.warehouse333.warehouse.entity.Location;
 
